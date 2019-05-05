@@ -128,4 +128,14 @@ int getWinners(int players[MAX_PLAYERS], struct gameState *state);
 /* Set array position of each player who won (remember ties!) to
    1, others to 0 */
 
+int adventurerEffect(struct gameState *state, int currentPlayer, int drawntreasure, int z, int temphand[], int cardDrawn);
+
+int gardensEffect();
+
+int remodelEffect(struct gameState *state, int currentPlayer, int handPos, int choice1, int choice2);
+
+int smithyEffect(struct gameState *gState, int cPlayer, int hPos);
+
+int villageEffect(struct gameState *gState, int cPlayer, int hPos);
+
 #endif
